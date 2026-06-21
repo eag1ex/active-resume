@@ -1,0 +1,122 @@
+@use "./variables" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+body,
+p,
+table *,
+ul * {
+  color: $color-body !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600 !important;
+  margin-top: 1.2em !important;
+  margin-bottom: .4em !important;
+}
+
+h1 {
+  font-size: 15pt;
+  padding-bottom: .2em !important;
+  color: $color-primary !important;
+}
+
+h2 {
+  font-size: 14pt !important;
+  margin-bottom: 0 !important;
+}
+
+h3 {
+  font-size: 12pt !important;
+  font-weight: 600 !important;
+  margin-top: .9em !important;
+  margin-bottom: .6em !important;
+  color: $color-primary !important;
+
+  border-left: 4px solid $color-primary;
+  padding-left: 8px;
+}
+
+h3::before {
+  display: none;
+}
+
+h4 {
+  font-size: 11pt !important;
+  font-weight: 600 !important;
+  margin-top: .5em !important;
+  margin-bottom: .1em !important;
+}
+
+h4::first-letter {
+  padding-left: 0;
+  border-left: none;
+}
+
+h6 {
+  margin-top: 8px !important;
+  font-size: 9pt !important;
+  font-weight: 700 !important;
+  margin-bottom: -6px !important;
+  padding-bottom: 0 !important;
+  color: $color-muted !important;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+p,
+ul,
+ol {
+  margin-top: .3em !important;
+  margin-bottom: .8em !important;
+}
+
+p {
+  padding: .1em !important;
+  line-height: 1.45 !important;
+  margin-bottom: .4em !important;
+  padding-bottom: 0 !important;
+}
+
+ul,
+ol {
+  padding-left: 1.2em !important;
+}
+
+ul li {
+  line-height: 1.35em !important;
+  font-size: $font-size-base;
+}
+
+a {
+  font-weight: 500 !important;
+}
+
+a:link {
+  color: $color-primary;
+  text-decoration: underline;
+  text-decoration-color: #d9e7f0ff;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 3px;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+a.link::after {
+  display: inline-block;
+  content: "🔗";
+  font-size: $font-size-base;
+  position: relative;
+  right: 5px;
+}
+
+strong {
+  opacity: .9;
+}

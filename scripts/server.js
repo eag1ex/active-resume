@@ -3,10 +3,7 @@ const chokidar = require("chokidar");
 const WebSocket = require("ws");
 
 const discover = require("./discover");
-const {
-  buildAll,
-  buildDocument
-} = require("./build");
+const { buildAll } = require("./build");
 
 const app = express();
 
@@ -15,11 +12,17 @@ const wss = new WebSocket.Server({
 });
 
 function reloadClients() {
+
   wss.clients.forEach(client => {
-    if (client.readyState === 1) {
+
+    if (
+      client.readyState === WebSocket.OPEN
+    ) {
       client.send("reload");
     }
+
   });
+
 }
 
 (async () => {
@@ -27,93 +30,82 @@ function reloadClients() {
   await buildAll();
 
   app.use(
-    "/styles",
-    express.static("./src/styles")
+    express.static("./output")
   );
-
-//   app.use(
-//     "/output",
-//     express.static("./output")
-//   );
-  app.use(express.static("./output"));
 
   app.get("/", (req, res) => {
 
     const docs = discover();
 
     const links = docs
-      .map(
-        d =>
-          `<li>
-            <a href="/output/${d.fileName}.html">
-              ${d.fileName}
-            </a>
-          </li>`
-      )
+      .map(doc => `
+        <li>
+          <a href="/${doc.fileName}.html">
+            ${doc.fileName}
+          </a>
+        </li>
+      `)
       .join("");
 
     res.send(`
-      <h1>Documents</h1>
-      <ul>${links}</ul>
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Documents</title>
+      </head>
+      <body>
+        <h1>Documents</h1>
+        <ul>
+          ${links}
+        </ul>
+      </body>
+      </html>
     `);
+
   });
 
   app.listen(3000, () => {
+
     console.log(
       "http://localhost:3000"
     );
+
   });
 
-  chokidar
-  .watch("src", {
-    persistent: true,
-    ignoreInitial: true
-  })
-    .on("all", async(event, file) => {
+  const watcher = chokidar.watch(
+    "src",
+    {
+      persistent: true,
+      ignoreInitial: true
+    }
+  );
+
+  watcher.on(
+    "all",
+    async (event, file) => {
 
       console.log(
-        "changed:",
-        file
+        `[${event}] ${file}`
       );
 
-      const docs = discover();
+      try {
 
-      if (
-        file.endsWith(".md")
-      ) {
+        await buildAll();
 
-        const doc =
-          docs.find(
-            d =>
-              d.source.endsWith(
-                file.split("/").pop()
-              )
-          );
+        reloadClients();
 
-        if (doc) {
-          await buildDocument(doc);
-        }
+      }
+      catch (error) {
+
+        console.error(
+          "Build failed:"
+        );
+
+        console.error(error);
+
       }
 
-      if (
-        file.endsWith(".css")
-      ) {
-
-        const css =
-          file.split("/").pop();
-
-        const affected =
-          docs.filter(
-            d =>
-              d.cssName === css
-          );
-
-        for (const doc of affected) {
-          await buildDocument(doc);
-        }
-      }
-
-      reloadClients();
-    });
+    }
+  );
 
 })();

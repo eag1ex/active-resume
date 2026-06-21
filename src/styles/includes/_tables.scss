@@ -1,0 +1,38 @@
+@use "./variables"  as *;
+table {
+
+  border-collapse: collapse !important;
+
+  width: 100% !important;
+
+}
+
+table,
+th,
+td {
+  border: none !important;
+}
+
+thead th {
+
+  border-top: 1px solid $color-body !important;
+
+  text-align: left !important;
+
+  padding: 8px !important;
+
+}
+
+tbody {
+
+  border-bottom: 1px solid $color-body !important;
+
+}
+
+td {
+
+  padding: 8px !important;
+
+  vertical-align: top !important;
+
+}

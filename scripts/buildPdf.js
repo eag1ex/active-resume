@@ -1,13 +1,17 @@
-const { execFile } = require("child_process");
+const { execFile } =
+  require("child_process");
 
 function buildPdf(
   htmlFile,
   pdfFile
 ) {
-  return new Promise(
-    (resolve, reject) => {
 
-            // requires installing
+  return new Promise(
+    (
+      resolve,
+      reject
+    ) => {
+                    // requires installing
     // sudo apt install weasyprint
       execFile(
         "weasyprint",
@@ -28,6 +32,8 @@ function buildPdf(
 
     }
   );
+
 }
 
-module.exports = buildPdf;
+module.exports =
+  buildPdf;

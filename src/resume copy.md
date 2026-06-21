@@ -43,6 +43,8 @@ Senior Lead Software Engineer with 10+ years of experience building scalable web
 
 ### Core Skills
 
+---
+
 - **Languages:** JavaScript / TypeScript / Node.js / Python / PHP5
 - **Frontend:** React, Next.js, Angular, Vue.js, Astro.js, Svelte.js
 - **Backend:** Node.js, NestJS, Express · REST, GraphQL, WebSockets, Stripe Payments
@@ -69,7 +71,7 @@ Senior Lead Software Engineer with 10+ years of experience building scalable web
 
 ###### 2024 – Present · Remote
 
-#### Independent Software Engineer · [michaelworks.netlify.app](https://michaelworks.netlify.app)
+#### Independent Software Engineer — [michaelworks.netlify.app](https://michaelworks.netlify.app)
 
 - Build niche projects with [`Astro.js`](https://michaelworks.netlify.app){: .link} and [`Sveltejs`](https://github.com/eag1ex/svelte-stacked){: .link}
 - Working on new startup founder project, early stage pre-seed
@@ -114,7 +116,7 @@ _**Stack:** Node.js, TypeScript, Angular, React, Next.js, NestJS, Firebase, Azur
 
 ###### 2018 – 2021 · Thailand / EU Remote
 
-#### Senior Full-Stack Engineer · Eaglex.net
+#### Senior Full-Stack Engineer — Eaglex.net
 
 - Built [Pocket.js](https://github.com/eag1ex/pocket.js) (state manager)
 - Delivered RESTful apps in cloud-first architectures
@@ -125,7 +127,7 @@ _**Stack:** Node.js, Angular, React Native, GraphQL, Microservices, Vulcan.js_
 
 ###### 2017 – 2018 · Europe
 
-#### Senior Full-Stack Consultant · Eaglex.net
+#### Senior Full-Stack Consultant — Eaglex.net
 
 - Delivered client projects across EU; integrated REST APIs for web & mobile
 - Built [**x-utils-es**](https://github.com/eag1ex/x-utils-es) (NPM open-source JS utilities)
@@ -146,7 +148,7 @@ _**Stack:** Angular, Node.js, MongoDB, Nginx,Vue.js, [npm projects](https://npmj
 
 ###### 2015 – 2016 · Thailand
 
-#### Senior Front-End Developer · AMOS (Allianz)
+#### Senior Front-end Developer — AMOS (Allianz)
 - Fulltime, Bangkok / 9 months contract
 - Delivered AngularJS/Ionic apps in agile teams
 - Led mobile, on-road rescue and recovery [> project called **Yolda** <](https://michaelworks.netlify.app/projects/allianz-car-on-road-rescue-app/); introduced modular architecture

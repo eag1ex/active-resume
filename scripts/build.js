@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
 const MarkdownIt = require("markdown-it");
+const sass = require("sass");
 
 const discover = require("./discover");
 const buildPdf = require("./buildPdf");
@@ -10,120 +11,152 @@ const md = new MarkdownIt({
   html: true
 });
 
-async function buildDocument(doc) {
+function copyAssets() {
 
-  const source = fs.readFileSync(
-    doc.source,
-    "utf8"
-  );
-
-  const parsed = matter(source);
-
-  const template = fs.readFileSync(
-    "./templates/document.html",
-    "utf8"
-  );
-
- function loadCss(filePath) {
-
-  let css = fs.readFileSync(
-    filePath,
-    "utf8"
-  );
-
-  css = css.replace(
-    /@import\s+url\(["'](.+?)["']\);?/g,
-    (_, importPath) => {
-
-      const resolvedPath = path.resolve(
-        path.dirname(filePath),
-        importPath
-      );
-
-      console.log(
-        `Including: ${resolvedPath}`
-      );
-
-      return loadCss(
-        resolvedPath
-      );
-
-    }
-  );
-
-  return css;
-}
-
-const css = loadCss(
-  path.join(
-    "src",
-    "styles",
-    doc.cssName
-  )
-);
-  const content = md.render(
-    parsed.content
-  );
-
-  const html = template
-    .replaceAll(
-      "{{TITLE}}",
-      doc.title || doc.fileName
-    )
-    .replaceAll(
-      "{{CSS}}",
-      css
-    )
-    .replaceAll(
-      "{{CONTENT}}",
-      content
+  const sourceAssets =
+    path.join(
+      "src",
+      "assets"
     );
 
-  fs.mkdirSync(
-    "./output",
+  const outputAssets =
+    path.join(
+      "output",
+      "assets"
+    );
+
+  if (
+    !fs.existsSync(
+      sourceAssets
+    )
+  ) {
+    return;
+  }
+
+  fs.cpSync(
+    sourceAssets,
+    outputAssets,
     {
       recursive: true
     }
   );
 
-  const htmlFile = path.join(
-    "output",
-    `${doc.fileName}.html`
+  console.log(
+    "Assets copied"
   );
 
-  const pdfFile = path.join(
-    "output",
-    `${doc.fileName}.pdf`
+}
+
+function buildCss(doc) {
+
+  const entryFile = path.join(
+    "src",
+    "styles",
+    "base",
+    doc.cssName
   );
+
+  const result = sass.compile(
+    entryFile,
+    {
+      style: "expanded"
+    }
+  );
+
+  const outputCssFile =
+    `${doc.fileName}.css`;
+
+  fs.writeFileSync(
+    path.join(
+      "output",
+      outputCssFile
+    ),
+    result.css
+  );
+
+  return outputCssFile;
+}
+
+async function buildDocument(doc) {
+
+  const markdown =
+    fs.readFileSync(
+      doc.source,
+      "utf8"
+    );
+
+  const parsed =
+    matter(markdown);
+
+  const template =
+    fs.readFileSync(
+      "./templates/document.html",
+      "utf8"
+    );
+
+  const cssFile =
+    buildCss(doc);
+
+  const content =
+    md.render(
+      parsed.content
+    );
+
+  const html =
+    template
+      .replace(
+        "{{TITLE}}",
+        doc.title
+      )
+      .replace(
+        "{{CSS_FILE}}",
+        cssFile
+      )
+      .replace(
+        "{{CONTENT}}",
+        content
+      );
+
+  const htmlFile =
+    path.join(
+      "output",
+      `${doc.fileName}.html`
+    );
 
   fs.writeFileSync(
     htmlFile,
-    html,
-    "utf8"
-  );
-
-  console.log(
-    `HTML: ${htmlFile}`
+    html
   );
 
   await buildPdf(
     path.resolve(htmlFile),
-    path.resolve(pdfFile)
+    path.resolve(
+      "output",
+      `${doc.fileName}.pdf`
+    )
   );
 
   console.log(
-    `PDF: ${pdfFile}`
+    `Built ${doc.fileName}`
   );
 }
 
 async function buildAll() {
 
-  const docs = discover();
+  fs.mkdirSync(
+    "output",
+    {
+      recursive: true
+    }
+  );
+
+  const docs =
+    discover();
 
   for (const doc of docs) {
     await buildDocument(doc);
   }
-
+  copyAssets();
 }
 
 module.exports = {
@@ -132,16 +165,5 @@ module.exports = {
 };
 
 if (require.main === module) {
-
-  buildAll()
-    .then(() => {
-      console.log(
-        "\nBuild complete"
-      );
-    })
-    .catch(error => {
-      console.error(error);
-      process.exit(1);
-    });
-
+  buildAll();
 }

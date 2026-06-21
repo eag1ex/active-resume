@@ -1,5 +1,5 @@
 ---
 fileName: Opensource
-cssName: opensource.css
+cssName: opensource.scss
 title: Open Source
 ---
