@@ -1,19 +1,32 @@
-$color-primary: #094166ff;
-$color-primary-muted: #09416665;
 
 $color-body: #2c3e50;
+$color-primary: rgba($color-body,.8);
+$color-primary-muted: #09416665;
 $color-muted: #4a6784ff;
 
 $color-border: #f2f1f1ff;
 $color-accent-border: #ece8e8ff;
 
+// $font-body:
+//   "Segoe UI Variable",
+//   "Segoe UI",
+//   system-ui,
+//   -apple-system,
+//   "Helvetica Neue",
+//   Arial,
+//   sans-serif;
+// $font-body:
+//   "-apple-system-body",
+//    "ui-sans-serif", 
+//    "-apple-system", "system-ui", 
+//    "Segoe UI", "Helvetica", 
+//    "Apple Color Emoji", "Arial",
+//     "sans-serif", "Segoe UI Emoji", 
+//     "Segoe UI Symbol";
+//  $font-body:"Segoe UI", "Helvetica Neue", Arial;
+
 $font-body:
-  "Segoe UI Variable",
   "Segoe UI",
-  system-ui,
-  -apple-system,
-  "Helvetica Neue",
   Arial,
   sans-serif;
-
 $font-size-base: 11pt;

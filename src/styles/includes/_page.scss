@@ -1,12 +1,24 @@
 @use "./variables" as *;
 
 @page {
-  font-family: "Segoe UI", "Helvetica Neue", Arial;
-  size: A4;
+  //  font-family: "Segoe UI", "Helvetica", Arial,"Segoe UI Symbol";
+   $font-body:
+  "Segoe UI",
+  Arial,
+  sans-serif;
+  // font-family: 
+  // "-apple-system-body",
+  //  "ui-sans-serif", 
+  //  "-apple-system", "system-ui", 
+  //  "Segoe UI", "Helvetica", 
+  //  "Apple Color Emoji", "Arial",
+  //   "sans-serif", "Segoe UI Emoji", 
+  //   "Segoe UI Symbol";
+
 
   margin-top: 10mm;
-  margin-left: 7mm;
-  margin-right: 7mm;
+  margin-left: 5mm;
+  margin-right: 5mm;
   margin-bottom: 18mm;
 
   color: $color-body;
@@ -32,6 +44,7 @@
   }
 }
 
+
 @media screen {
   html {
     background: #ececec;
@@ -52,6 +65,8 @@ body {
   font-family: $font-body !important;
   font-size: $font-size-base;
   line-height: 1.25;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1,

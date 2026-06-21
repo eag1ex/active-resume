@@ -15,7 +15,9 @@ ul * {
 h1,
 h2,
 h3 {
-  font-weight: 600 !important;
+   color: $color-primary !important;
+  font-weight: 700;
+  font-style: normal;
   margin-top: 1.2em !important;
   margin-bottom: .4em !important;
 }
@@ -24,22 +26,27 @@ h1 {
   font-size: 15pt;
   padding-bottom: .2em !important;
   color: $color-primary !important;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2 {
   font-size: 14pt !important;
   margin-bottom: 0 !important;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h3 {
   font-size: 12pt !important;
-  font-weight: 600 !important;
+  font-weight: 700;
+  font-style: normal;
   margin-top: .9em !important;
-  margin-bottom: .6em !important;
+  margin-bottom: 0!important;
   color: $color-primary !important;
 
-  border-left: 4px solid $color-primary;
-  padding-left: 8px;
+  // border-left: 4px solid $color-primary;
+  // padding-left: 8px;
 }
 
 h3::before {
@@ -48,7 +55,8 @@ h3::before {
 
 h4 {
   font-size: 11pt !important;
-  font-weight: 600 !important;
+  // font-weight: 500 !important;
+  color: $color-muted !important;
   margin-top: .5em !important;
   margin-bottom: .1em !important;
 }
@@ -59,14 +67,14 @@ h4::first-letter {
 }
 
 h6 {
-  margin-top: 8px !important;
-  font-size: 9pt !important;
-  font-weight: 700 !important;
+  margin-top: 10px !important;
+  font-size: 12pt !important;
+  font-weight: 400 !important;
   margin-bottom: -6px !important;
   padding-bottom: 0 !important;
   color: $color-muted !important;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  // letter-spacing: .05em;
 }
 
 p,
@@ -85,7 +93,7 @@ p {
 
 ul,
 ol {
-  padding-left: 1.2em !important;
+  padding-left: 0em !important;
 }
 
 ul li {
@@ -94,7 +102,7 @@ ul li {
 }
 
 a {
-  font-weight: 500 !important;
+  // font-weight: 500 !important;
 }
 
 a:link {
@@ -118,5 +126,5 @@ a.link::after {
 }
 
 strong {
-  opacity: .9;
+   color: $color-muted !important;
 }

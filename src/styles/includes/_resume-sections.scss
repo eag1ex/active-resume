@@ -43,14 +43,14 @@
 #cert-courses p em {
   display: block;
   font-style: normal;
-  font-weight: 700;
+  // font-weight: 700;
   color: $color-primary;
   margin-bottom: 4px !important;
 }
 
-#work-before-2018 h6 {
-  margin-top: 10px !important;
-}
+// #work-before-2018 h6 {
+//   margin-top: 10px !important;
+// }
 
 #work-before-2018 p em {
   display: block;
@@ -64,4 +64,12 @@
 
 #other-core-skills h3::before {
   display: none;
+}
+.section-stack{
+  margin-top: -5px;
+  p{
+
+    line-height: .6!important;
+  }
+  font-size: 10pt;
 }

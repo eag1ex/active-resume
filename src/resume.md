@@ -31,8 +31,10 @@ title: My Resume
 <div class="profile-header-sub-section">
 
 **Main stack:** Node.js • React • Angular • TypeScript • NestJS/NextJS • ORM/NoSQL • Cloud/DevOps
+
 **Languages:** English, Polish · International experience across EU & APAC  
-**Profiles:** [GitHub](https://github.com/eag1ex?tab=stars) · [Website](https://michaelworks.eaglex.net) &nbsp;**Reference:** [Letter #1](https://michaelworks.eaglex.net/assets/letter-sample.jpg), [Letter #2](https://michaelworks.eaglex.net/assets/letter-sample-b.jpg) &nbsp;**Location:** New Zealand
+
+**Profiles:** [GitHub](https://github.com/eag1ex?tab=stars) · [Website](https://michaelworks.eaglex.net) &nbsp; **Reference:** [Letter #1](https://michaelworks.eaglex.net/assets/letter-sample.jpg), [Letter #2](https://michaelworks.eaglex.net/assets/letter-sample-b.jpg) &nbsp; **Location:** New Zealand
 
 </div>
 </div>
@@ -41,27 +43,14 @@ title: My Resume
 
 Senior Lead Software Engineer with 10+ years of experience building scalable web & mobile applications. Expert in Node.js, TypeScript, Angular/React, and cloud platforms (GCP/Azure/Firebase). Strong background in UX design (8+ years prior to development) helps bridge engineering and product. Proven track record leading teams, accelerating deployments (−70% time), and reducing infrastructure costs (−30%).
 
-### Core Skills
-
-- **Languages:** JavaScript / TypeScript / Node.js / Python / PHP5
-- **Frontend:** React, Next.js, Angular, Vue.js, Astro.js, Svelte.js
-- **Backend:** Node.js, NestJS, Express · REST, GraphQL, WebSockets, Stripe Payments
-- **Databases:** MongoDB, Firestore, PostgreSQL; ORM/ODM: Prisma, Mongoose
-- **Cloud / DevOps:** GCP, Firebase, Azure, Netlify, Vercel, IBM Cloud, Docker, CloudFlare
-- **Mobile:** React Native (Expo), Ionic/Cordova
-
-<div id="other-core-skills">
-
-### MISCELLANEOUS
-
-- **UI & Libraries:** GSAP, MUI, Tailwind, Chart.js, Sass/SCSS, D2LANG
-- **Security:** OAuth2, JWT, 2FA, OWASP practices
-- **Testing & Tooling:** Jest, Mocha, Chai, Postman, Swagger · ESLint, Webpack/Vite
-- **Practices:** Agile/Scrum, SOLID, DDD, TDD, Microservices, Monorepos, CI/CD
-- **OS:** Linux/Ubuntu, Unix/Mac, Windows
-- **Regionally named:** Full-Stack Engineer, Senior Software Engineer, MERN/MEAN Developer
-
-</div>
+| **Core Skills**                                                                          | **Miscellaneous**                                                                        |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Languages:** JavaScript / TypeScript / Node.js / Python / PHP5                         | **UI & Libraries:** GSAP, MUI, Tailwind, Chart.js, Sass/SCSS, D2LANG                     |
+| **Frontend:** React, Next.js, Angular, Vue.js, Astro.js, Svelte.js                       | **Security:** OAuth2, JWT, 2FA, OWASP practices                                          |
+| **Backend:** Node.js, NestJS, Express · REST, GraphQL, WebSockets, Stripe Payments       | **Testing & Tooling:** Jest, Mocha, Chai, Postman, Swagger · ESLint, Webpack/Vite        |
+| **Databases:** MongoDB, Firestore, PostgreSQL; ORM/ODM: Prisma, Mongoose                 | **Practices:** Agile/Scrum, SOLID, DDD, TDD, Microservices, Monorepos, CI/CD             |
+| **Cloud / DevOps:** GCP, Firebase, Azure, Netlify, Vercel, IBM Cloud, Docker, CloudFlare | **OS:** Linux/Ubuntu, Unix/Mac, Windows                                                  |
+| **Mobile:** React Native (Expo), Ionic/Cordova                                           | **Regionally named:** Full-Stack Engineer, Senior Software Engineer, MERN/MEAN Developer |
 
 ---
 
@@ -71,8 +60,8 @@ Senior Lead Software Engineer with 10+ years of experience building scalable web
 
 #### Independent Software Engineer · [michaelworks.netlify.app](https://michaelworks.netlify.app)
 
-- Build niche projects with [`Astro.js`](https://michaelworks.netlify.app){: .link} and [`Sveltejs`](https://github.com/eag1ex/svelte-stacked){: .link}
-- Working on new startup founder project, early stage pre-seed
+- Build niche projects with [Astro.js](https://michaelworks.netlify.app) and [Sveltejs](https://github.com/eag1ex/svelte-stacked)
+- Involved in early stage pre-seed founder startup project, 
 - Prototyped AI workflows for scaffolding and docs
 - Maintain my [**opensource work**](https://michaelworks.netlify.app/projects/cat/open-source/)
 
@@ -97,17 +86,17 @@ Senior Lead Software Engineer with 10+ years of experience building scalable web
 
 **Key Projects:**
 
-- [**_Koges Kost Koncept_**](https://play.google.com/store/apps/details?id=com.kogeskostkoncept) — Full-stack fitness app; optimized, cut build times 3×, reduced cost by 50%.
-- [**_Manao Meals_**](https://play.google.com/store/apps/details?id=com.manaosoftware.lunchnao) — Internal food-delivery app; improved caching & Google IAM for large user base
-- [**_Team Picker_**](https://michaelworks.netlify.app/projects/manao-team-picker-online-employee-skill-profile/) — Employee directory; reduced infra costs 30%, introduced niche React Recoil stack.
-- [**_ARV | SSHE_**](https://michaelworks.netlify.app/projects/hess-client-admin-portal-fintech/) — React admin; coord closely with .NET backend, led team of 3, introduced RestAPI namespace / schema.
+- [**Koges Kost Koncept**](https://play.google.com/store/apps/details?id=com.kogeskostkoncept) — Full-stack fitness app; optimized, cut build times 3×, reduced cost by 50%.
+- [**Manao Meals**](https://play.google.com/store/apps/details?id=com.manaosoftware.lunchnao) — Internal food-delivery app; improved caching & Google IAM for large user base
+- [**Team Picker**](https://michaelworks.netlify.app/projects/manao-team-picker-online-employee-skill-profile/) — Employee directory; reduced infra costs 30%, introduced niche React Recoil stack.
+- [**ARV | SSHE**](https://michaelworks.netlify.app/projects/hess-client-admin-portal-fintech/) — React admin; coord closely with .NET backend, led team of 3, introduced RestAPI namespace / schema.
 </span>
 
-<span class="shrink v2" style="margin-top:-8px; display:block;">
+<div class="section-stack">
 
-_**Stack:** Node.js, TypeScript, Angular, React, Next.js, NestJS, Firebase, Azure, GCP, Firestore, MS SQL, Stripe, Monorepo, D2LANG_
-</span>
+<u>Stack:</u> Node.js, TypeScript, Angular, React, Next.js, NestJS, Firebase, Azure, GCP, Firestore, MS SQL, Stripe, Monorepo, D2LANG
 
+</div>
 
 <div id='work-before-2018' style="padding-top:1px;">
 
@@ -212,7 +201,7 @@ _**Stack:** Adobe Flash, ActionScript 2, Adobe PhotoShop_
 
 <div class="earlier-career">
 
-###### EARLIER CAREER — 1999–2011 · New Zealand  [Details](https://eaglex.net/assets/michael.resume.earlier.pdf)
+###### EARLIER CAREER — 1999–2011 · New Zealand:  [Details](https://eaglex.net/assets/michael.resume.earlier.pdf)
 
 - _Graphic design and television work, working for large and international corporations_
 
@@ -273,3 +262,4 @@ _Soft Skills & Communication_
 - <u>No A.I.</u> interviews.
 - References provided only upon selection.
 </div>
+

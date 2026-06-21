@@ -1,10 +1,9 @@
-@use "./variables"  as *;
+@use "./variables" as *;
 table {
-
   border-collapse: collapse !important;
-
+  margin-top: 10px;
+   margin-bottom: 10px;
   width: 100% !important;
-
 }
 
 table,
@@ -14,25 +13,51 @@ td {
 }
 
 thead th {
-
-  border-top: 1px solid $color-body !important;
-
+  border-top: 0px solid $color-body !important;
   text-align: left !important;
-
-  padding: 8px !important;
-
+  padding: 2px !important;
 }
 
 tbody {
-
-  border-bottom: 1px solid $color-body !important;
-
+  border-bottom: 0px solid $color-body !important;
 }
 
 td {
-
-  padding: 8px !important;
-
+  padding: 2px !important;
   vertical-align: top !important;
+  padding-right:20px!important;
+}
 
+.skills-columns {
+  display: flex;
+  gap: 10px;
+
+  > div {
+    width: 50%;
+    flex: 0 0 calc(50% - 10px);
+    li{
+      font-size:10pt ;
+    }
+  }
+
+  ul {
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+}
+
+ul li {
+
+  display: inline;
+
+}
+
+ul li:not(:last-child)::after {
+
+  // content: " •";
+
+}
 }
