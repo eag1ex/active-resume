@@ -1,0 +1,39 @@
+{
+  "json.schemas": [],
+  "editor.formatOnSave": false,
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[python]": {
+    "editor.formatOnSave": false
+  },
+
+
+  // "markdown-preview-enhanced.previewTheme": "github-light.css",
+  // "markdown-preview-enhanced.codeBlockTheme": "coy.css",
+  // "markdown-preview-enhanced.revealjsTheme": "none.css",
+  // "markdown-preview-enhanced.chromePath": "/usr/bin/google-chrome-stable",
+
+
+  //"markdown-preview-enhanced.princePath": "/usr/bin/prince"
+  //"markdown-preview-enhanced.previewTheme": "gothic.css",
+
+  //   "markdown-preview-enhanced": {
+  //     "princePath": "/usr/bin/prince",
+  //     "previewTheme": "gothic.css", // affects live preview only
+  //     "exportPDF": {
+  //       "styles": [
+  //         "file:///media/vendeta/data_disk_2/x-workflow/michael.resume/chatgpt.resume/preview-themes/atom-dark.css"
+  //       ]
+  //     },
+  //     "enablePreviewZenMode": false
+  //   }
+
+  // "markdown-preview-enhanced.usePandocParser"
+  //   "markdown-preview-enhanced": {
+  //     "usePandocParser": false,
+  //     "princePath": "/usr/bin/prince",
+  //     "exportPDF": {
+  //       "styles": []
+  //     }
+}

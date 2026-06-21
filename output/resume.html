@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>My Resume</title>
+
+
+
+
+
+  <style>
+
+
+@media screen {
+  html {
+    background: #ececec;
+  }
+
+  body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto !important;
+    background: white;
+    box-shadow:
+      0 0 25px rgba(0,0,0,.15);
+
+    box-sizing: border-box;
+  }
+
+}
+
+@media print {
+
+  html,
+  body {
+  font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system,
+"Helvetica Neue", Arial, sans-serif !important;
+    background: white;
+    box-shadow: none;
+    margin: 0;
+    
+  }
+
+}
+
+/* First page layout */
+@page :first {
+  margin-top: 15mm;
+  @top-right{ content: 'Jun 10 2026'; font-size: 6pt; }
+  
+}
+
+
+@page {
+  
+  size: A4;
+  margin-top: 5mm;
+  margin-left: 7mm;
+  margin-right: 7mm;
+  margin-bottom: 18mm;
+
+   @bottom-left {
+    opacity: .5;
+    content: "Michael P. | Resume | Senior Lead Software Engineer";
+    font-size: 9pt;
+  }
+  @bottom-right {
+    opacity: .5;
+    content: "Page " counter(page) " of " counter(pages);
+    font-size: 8pt;
+  }
+
+  
+
+  /* @bottom-right {
+      font-size: 9px;
+    content:
+      "Page "
+      counter(page)
+      " of "
+      counter(pages);
+  } */
+}
+
+
+
+#header-section {
+ margin-bottom:25px;
+}
+
+
+
+body {
+
+  /* font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+   font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system,
+"Helvetica Neue", Arial, sans-serif !important;
+  font-size: 9pt;
+  line-height: 1.1;
+  /* letter-spacing:-0.008em; */
+}
+
+/** main color **/
+
+h1,h2,h3,h4,h5,body,p, table *, ul *{
+   color: #2c3e50!important;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-weight: 600 !important;
+  margin-top: 1.4em !important;
+  margin-bottom: 0.4em !important;
+}
+
+h1 {
+  font-size: 15pt !important;
+  /* border-bottom: 4px solid #0941662d !important; */
+  padding-bottom: 0.2em !important;
+  color: #094166ff!important;
+}
+
+h2 {
+  font-size: 14pt !important;
+  margin-bottom:0em !important;
+}
+
+h3 {
+  font-size: 12pt !important;
+  font-weight: 500 !important;
+  margin-top: .7em !important;
+  margin-bottom: .6em !important;
+  color: #094166ff!important;
+}
+
+h4 {
+  font-size: 11pt !important;
+  font-weight: 500 !important;
+  margin-top: 1.4em !important;
+  margin-bottom:0 !important;
+  /* text-decoration: underline;
+  text-decoration-color: #eee;  
+  text-underline-offset: 6px;      text-decoration-thickness: 3px; 
+  text-decoration-thickness: 3px; */
+}
+
+a.link::after{
+  display:inline-block;
+   content: "🔗";
+   font-size:8px;
+   position:relative;
+   right:5px;
+}
+
+h4::first-letter {
+  /* margin-left:5px; */
+  padding-left:6px;
+  /* font-size: 2em;   */
+  /* font-weight: bold; */
+  /* color: crimson; */
+  border-left: 5px solid #ece8e8ff; 
+  margin-left:0px;
+}
+
+
+h6{
+  margin-top:6px!important;
+  font-size: 9pt !important;
+  font-weight: 600 !important;
+  margin-bottom:-13px!important;
+  padding-bottom:0!important;
+  color: #4a6784ff!important;
+  text-transform:uppercase;
+}
+
+
+
+/* h3::before {
+  font-size: 18pt !important;
+  line-height: 0;
+  margin-right:5px;
+  position:relative;
+  display: inline-block;   
+  color: #2c3e50!important;
+} */
+
+
+h3::before {
+  /* content: "■"; */
+  /* content: "\25CB";  */
+  content: "#"; 
+  font-weight:600;
+  font-size: 14pt !important;
+  line-height: 0;
+  top:1px;
+  margin-right:5px;
+  position:relative;
+  display: inline-block;
+  color: #09416665!important;
+}
+
+
+
+/* Paragraphs and lists */
+p,
+ul,
+ol {
+  margin-top: 0.3em !important;
+  margin-bottom: 0.8em !important;
+}
+
+p{
+  padding:.1em!important;
+  line-height: 1.6!important;
+}
+
+ul,
+ol {
+  padding-left: 1.2em !important;
+}
+
+ul li{
+    line-height: 1.6em!important;
+    font-size: 9.5pt;
+}
+
+/* Links */
+.markdown-preview a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+a:link{
+  color: #094166ff;
+  text-decoration:underline;
+  text-decoration-color: #d9e7f0ff;
+  text-underline-offset: 1px;      
+  text-decoration-thickness: 3px; 
+}
+
+
+a{
+   font-weight: 500 !important;
+}
+
+
+
+/* a::after {
+  position:relative;
+  top:-2px;
+  content: " 🔗";
+  font-size: 0.5em;
+  margin-left: 2px;   
+  text-decoration:none!important;
+  display: inline-block;   
+} */
+
+
+/* Page break handling */
+h1,
+h2 {
+  page-break-after: avoid !important;
+}
+
+h2 hr{
+   text-decoration:none!important;
+}
+
+h3,
+p,
+ul {
+  page-break-inside: avoid !important;
+}
+p{
+  margin-bottom:.4em!important;
+  padding-bottom:0!important;
+}
+
+
+
+
+hr {
+  border: 0;
+  border-top: 2px solid #f2f1f1ff!important;
+  margin-top:0px!important;
+  margin-bottom:15px!important;
+  padding: 0!important;
+}
+
+#header-section h2{
+ margin-top:10px!important
+}
+#header-section hr {
+  margin-top:-35px!important;
+  margin-left:18px
+}
+
+#header-section strong{
+ color:#094166ff!important
+}
+
+strong{
+  opacity:.9;
+}
+
+
+
+/* table formatting */
+table {
+  border-collapse: collapse!important;
+  width: 100%!important;
+}
+
+table, th, td {
+  border: none!important;
+}
+
+thead th {
+  border-top: 1px solid #2c3e50!important;
+  text-align: left!important;
+  padding: 8px!important;
+}
+
+tbody{
+  border-bottom: 1px solid #2c3e50!important;
+}
+
+td {
+  padding: 8px!important;
+  vertical-align: top!important;
+}
+
+
+
+ 
+
+/** job sections**/
+
+
+.job-sections{
+
+}
+
+#job-2{
+  /* li{
+    letter-spacing:-.01em;
+    font-size:10.5pt;
+  } */
+}
+
+#disclaimer{
+  margin-top:35px!important;
+  opacity:.6;
+  font-size:12px!important;
+
+}
+#disclaimer li{
+   font-size:11px!important;
+}
+
+.earlier-career h6{
+line-height:3em
+}
+
+.earlier-career {
+  font-style:italic;
+}
+
+
+#cert-courses p em{
+  display:block;
+margin-bottom:-5px!important;
+}
+
+#work-before-2018 h6{
+  margin-top:10px!important;
+}
+
+
+#work-before-2018 p em{
+  display:block;
+  margin-top:-10px!important;
+}
+
+
+#other-core-skills h3{
+  margin-bottom:0!important;
+  font-size:12px!important;
+}
+
+
+#other-core-skills li{
+  /* font-size:8.5pt!important; */
+}
+
+#other-core-skills h3:before{
+  display:none;
+}
+
+.profile-header {
+  margin-bottom: 14px;
+  padding-bottom: 0 !important;
+}
+
+.profile-header h1 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 12pt !important;
+}
+
+.profile-header h1:first-child {
+  transform: rotate(-2deg);   /* tilt slightly left */
+  display: inline-block;      /* allow transform */
+}
+
+
+.profile-header h1:nth-child(2) {
+
+  font-size: 10pt !important;
+
+}
+
+
+
+
+.image-wrapper {
+ 
+  margin-left: -10px;
+}
+
+#header-section hr{
+  margin-left:75px
+}
+
+.profile-header-sub-section{
+  font-size:12px!important;
+}
+
+.heading-list {
+  margin-left: 0px !important;
+  padding-left: 0px;
+  margin-top: -15px;
+}
+
+/* Outer ring */
+.image-ring {
+  display: inline-block;
+  border:6px solid #f2f1f1ff;         /* white outer border */
+  border-radius: 50%;             /* circular */
+  padding: 3px;                   /* space for inner border */
+  box-sizing: border-box;
+}
+
+/* Inner border + image */
+.profile-img {
+  border: 6px solid #e0d9f2f1;    /* inner colored border */
+  border-radius: 50%;
+  width: 100%;
+  max-width: 70px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+
+
+span.shrink{
+  letter-spacing:-0.02em;
+}
+
+span.shrink.v2{
+  font-size:9pt!important;
+
+}
+
+
+ul {
+  
+  list-style: none; margin: 0; padding: 0; display: flex; /* inline flow */ flex-wrap: wrap; /* wrap to next line */ gap: 0 .4rem; /* space between items */ } ul > li { position: relative; padding-left: .8rem; /* room for arrow */ margin: 0; display:inline-block; left:-15px; } ul > li::before, ul > li::before { font-size:1.2em; content: "•"; /* try "→", "›", "▸" for variants */ position: absolute; left: 0; top: 0px; font-weight: 500; /* why: keeps glyph crisp when printing */ } ul { list-style-position: outside; } ul li::marker { content: "• "; font-weight: 500; font-size:1.2em; }
+  </style>
+
+</head>
+<body>
+
+<div id="header-section">
+<div style="display:flex; gap:0px; align-items:center;" class="profile-header">
+  <div class="image-wrapper" style="flex:0 0 15%; display:flex; justify-content:center;">
+    <div class="image-ring">
+      <img
+        src="./images/me_graphic_small.jpg"
+        alt="Your Name"
+        class="profile-img"
+      />
+    </div>
+  </div>
+  <div style="flex:1 1 auto; display:flex; flex-direction:column; gap:0px">
+    <div class='heading-list'>
+      <h1>< MICHAEL P. /></h1> 
+      <h1>&nbsp;< Senior Lead Software Engineer /></h1>
+    </div>
+  </div>
+</div>
+<hr style="border-top:6px solid #f2f1f1ff!important;" />
+<div class="profile-header-sub-section">
+<p><strong>Main stack:</strong> Node.js • React • Angular • TypeScript • NestJS/NextJS • ORM/NoSQL • Cloud/DevOps
+<strong>Languages:</strong> English, Polish · International experience across EU &amp; APAC<br>
+<strong>Profiles:</strong> <a href="https://github.com/eag1ex?tab=stars">GitHub</a> · <a href="https://michaelworks.eaglex.net">Website</a>  <strong>Reference:</strong> <a href="https://michaelworks.eaglex.net/assets/letter-sample.jpg">Letter #1</a>, <a href="https://michaelworks.eaglex.net/assets/letter-sample-b.jpg">Letter #2</a>  <strong>Location:</strong> New Zealand</p>
+</div>
+</div>
+<h3>PROFESSIONAL SUMMARY</h3>
+<p>Senior Lead Software Engineer with 10+ years of experience building scalable web &amp; mobile applications. Expert in Node.js, TypeScript, Angular/React, and cloud platforms (GCP/Azure/Firebase). Strong background in UX design (8+ years prior to development) helps bridge engineering and product. Proven track record leading teams, accelerating deployments (−70% time), and reducing infrastructure costs (−30%).</p>
+<h3>Core Skills</h3>
+<hr>
+<ul>
+<li><strong>Languages:</strong> JavaScript / TypeScript / Node.js / Python / PHP5</li>
+<li><strong>Frontend:</strong> React, Next.js, Angular, Vue.js, Astro.js, Svelte.js</li>
+<li><strong>Backend:</strong> Node.js, NestJS, Express · REST, GraphQL, WebSockets, Stripe Payments</li>
+<li><strong>Databases:</strong> MongoDB, Firestore, PostgreSQL; ORM/ODM: Prisma, Mongoose</li>
+<li><strong>Cloud / DevOps:</strong> GCP, Firebase, Azure, Netlify, Vercel, IBM Cloud, Docker, CloudFlare</li>
+<li><strong>Mobile:</strong> React Native (Expo), Ionic/Cordova</li>
+</ul>
+<div id="other-core-skills">
+<h3>MISCELLANEOUS</h3>
+<ul>
+<li><strong>UI &amp; Libraries:</strong> GSAP, MUI, Tailwind, Chart.js, Sass/SCSS, D2LANG</li>
+<li><strong>Security:</strong> OAuth2, JWT, 2FA, OWASP practices</li>
+<li><strong>Testing &amp; Tooling:</strong> Jest, Mocha, Chai, Postman, Swagger · ESLint, Webpack/Vite</li>
+<li><strong>Practices:</strong> Agile/Scrum, SOLID, DDD, TDD, Microservices, Monorepos, CI/CD</li>
+<li><strong>OS:</strong> Linux/Ubuntu, Unix/Mac, Windows</li>
+<li><strong>Regionally named:</strong> Full-Stack Engineer, Senior Software Engineer, MERN/MEAN Developer</li>
+</ul>
+</div>
+<hr>
+<h3>PROFESSIONAL EXPERIENCE</h3>
+<h6>2024 – Present · Remote</h6>
+<h4>Independent Software Engineer — <a href="https://michaelworks.netlify.app">michaelworks.netlify.app</a></h4>
+<ul>
+<li>Build niche projects with <a href="https://michaelworks.netlify.app"><code>Astro.js</code></a>{: .link} and <a href="https://github.com/eag1ex/svelte-stacked"><code>Sveltejs</code></a>{: .link}</li>
+<li>Working on new startup founder project, early stage pre-seed</li>
+<li>Prototyped AI workflows for scaffolding and docs</li>
+<li>Maintain my <a href="https://michaelworks.netlify.app/projects/cat/open-source/"><strong>opensource work</strong></a></li>
+</ul>
+<hr>
+<div id='job-2' class='job-sections'>
+<h6>Dec 2021 – Jan 2024 · Chiang Mai, Thailand</h6>
+<h4>Senior Lead Developer — Manao Software  <a href="https://eaglex.net/assets/michael.resume.manao.jd.pdf"><em>Brief</em></a></h4>
+<ul>
+<li>Leading digital agency 100+ in Chiang Mai.</li>
+<li>Directed cross-functional teams (5–10 engineers), led architecture &amp; estimations</li>
+<li>Mentored junior/mid developers → raised code quality across the org</li>
+<li>Authored best-practices guide for company, technical specs, standardized documentation</li>
+<li>Improved Azure pipelines + Git strategy, integrated MS SQL ORM</li>
+<li><span class="shrink">Led frontend overhaul within a monorepo environment → improved engagement and reduced deployment time by 70%</span></li>
+</ul>
+<span class="shrink">
+<p><strong>Key Projects:</strong></p>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.kogeskostkoncept"><strong><em>Koges Kost Koncept</em></strong></a> — Full-stack fitness app; optimized, cut build times 3×, reduced cost by 50%.</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.manaosoftware.lunchnao"><strong><em>Manao Meals</em></strong></a> — Internal food-delivery app; improved caching &amp; Google IAM for large user base</li>
+<li><a href="https://michaelworks.netlify.app/projects/manao-team-picker-online-employee-skill-profile/"><strong><em>Team Picker</em></strong></a> — Employee directory; reduced infra costs 30%, introduced niche React Recoil stack.</li>
+<li><a href="https://michaelworks.netlify.app/projects/hess-client-admin-portal-fintech/"><strong><em>ARV | SSHE</em></strong></a> — React admin; coord closely with .NET backend, led team of 3, introduced RestAPI namespace / schema.
+</span></li>
+</ul>
+<span class="shrink v2" style="margin-top:-8px; display:block;">
+<p><em><strong>Stack:</strong> Node.js, TypeScript, Angular, React, Next.js, NestJS, Firebase, Azure, GCP, Firestore, MS SQL, Stripe, Monorepo, D2LANG</em>
+</span></p>
+<div id='work-before-2018' style="padding-top:1px;">
+<h6>2018 – 2021 · Thailand / EU Remote</h6>
+<h4>Senior Full-Stack Engineer — Eaglex.net</h4>
+<ul>
+<li>Built <a href="https://github.com/eag1ex/pocket.js">Pocket.js</a> (state manager)</li>
+<li>Delivered RESTful apps in cloud-first architectures</li>
+<li>Contracted with EU &amp; APAC clients, worked remotely from Poland during COVID</li>
+<li>Projects: <a href="https://michaelworks.netlify.app/projects/chilindo-press-website-angular-1-6-mvc/">Press website</a>, <a href="https://michaelworks.netlify.app/projects/bangkok-tuktuk-taxi-app-react-graphql/">TukTuk Graphql</a>, <a href="https://michaelworks.netlify.app/projects/simple-order-api/">Order Api</a></li>
+</ul>
+<p><em><strong>Stack:</strong> Node.js, Angular, React Native, GraphQL, Microservices, Vulcan.js</em></p>
+<h6>2017 – 2018 · Europe</h6>
+<h4>Senior Full-Stack Consultant — Eaglex.net</h4>
+<ul>
+<li>Delivered client projects across EU; integrated REST APIs for web &amp; mobile</li>
+<li>Built <a href="https://github.com/eag1ex/x-utils-es"><strong>x-utils-es</strong></a> (NPM open-source JS utilities)</li>
+<li>Managed own brand and SEO</li>
+<li><strong><em>Project</em></strong>: <a href="https://michaelworks.netlify.app/projects/spikechart-stocks-data-mvc-spa-angular-6/">Charts</a>, <a href="https://michaelworks.netlify.app/projects/excel-fuel-full-stack-app/">Excel fuel map</a>, <a href="https://michaelworks.netlify.app/projects/payme-invoice-vuejs-mvc-app/">PayME/Vue.JS</a></li>
+</ul>
+<div class="shrink">
+<p><em><strong>Stack:</strong> Angular, Node.js, MongoDB, Nginx,Vue.js, <a href="https://npmjs.com/~anon101">npm projects</a></em></p>
+</div>
+<h6>Project, 3+ months · Germany</h6>
+<h4>Senior MEAN Stack Developer — Darwin Recruitment</h4>
+<ul>
+<li>Contracted for various MEAN stack and Wordpress projects across Germany, and engaged in rapid dev cycles</li>
+</ul>
+<h6>2015 – 2016 · Thailand</h6>
+<h4>Senior Front-end Developer — AMOS (Allianz)</h4>
+<ul>
+<li>Fulltime, Bangkok / 9 months contract</li>
+<li>Delivered AngularJS/Ionic apps in agile teams</li>
+<li>Led mobile, on-road rescue and recovery <a href="https://michaelworks.netlify.app/projects/allianz-car-on-road-rescue-app/">&gt; project called <strong>Yolda</strong> &lt;</a>; introduced modular architecture</li>
+</ul>
+<h6>2014 – 2015 · Asia</h6>
+<h4>Senior MEAN Stack Developer / Independent Contractor — Eaglex.net</h4>
+<ul>
+<li>Digital nomad, traveling around Asia</li>
+<li>Worked for myself with a handful of clients</li>
+<li>Created and managed the Eaglex.net brand</li>
+<li><strong>Projects:</strong> <a href="https://michaelworks.netlify.app/projects/trello-app-spa-mvc-angular/">Trello App</a>, <a href="https://michaelworks.netlify.app/projects/cat/cms-wordpress/">Wordpress various</a></li>
+</ul>
+<h6>2013 – 2014 · Sydney, Australia</h6>
+<h4>Front End Developer | Freelance &amp; Contracts</h4>
+<ul>
+<li><strong>Recruitment agency work, clients:</strong></li>
+<li><span class="shrink">MI9, AJF Partnership, Catalyst IT, RAPP Tribal, The White Agency, Droga5, Ward6, MercerBell, DT Digital, The Hot House</span></li>
+<li>Delivered UI/UX and front-end work for enterprise clients, including Westpac Bank and Toyota</li>
+<li>Produced Flash animations and campaign assets for brands such as VISA and YouTube</li>
+<li>Contributed to CMS integrations, EDMs, and large-scale product launches</li>
+<li><strong>Projects</strong>: <a href="https://michaelworks.netlify.app/projects/lexus-is-reaction-wall/">#Lexus</a>, <a href="https://michaelworks.netlify.app/projects/toyota-prado-landing-page/">#Toyota</a>, <a href="https://michaelworks.netlify.app/projects/lexus-is-ipad/">#Lexus Ipad</a></li>
+</ul>
+<h6>2012 · New Zealand (a few months)</h6>
+<h4><span class="shrink">Digital Designer &amp; Developer | Colenso BBDO | Saatchi &amp; Saatchi — Projects</span></h4>
+<ul>
+<li>Produced high‑impact Flash animations for VISA</li>
+<li>Created WordPress themes and white‑label projects</li>
+<li>Handled remote assignments, and <a href="https://michaelworks.netlify.app/projects/cat/website-development/"><strong>web design work</strong></a></li>
+</ul>
+<h6>2011–2012 (plus) · New Zealand (1 year full‑time)</h6>
+<h4>Mid Front‑end Developer — WASABI (Digital Agency)</h4>
+<ul>
+<li>Developed responsive WordPress sites with direct client collaboration</li>
+<li><a href="https://michaelworks.netlify.app/projects/cat/cms-wordpress/"><strong>Wordpress projects</strong></a></li>
+</ul>
+<p><em><strong>Stack:</strong> JavaScript, jQuery, PHP 5, HTML5/CSS3, EDMs, WordPress, e‑commerce</em></p>
+<hr>
+<h3><strong>WORK:</strong> OPEN SOURCE &amp; OUTSOURCE PROJECTS   <a href="https://eaglex.net/assets/michael.opensource.pdf">Details </a></h3>
+<ul>
+<li><a href="https://github.com/eag1ex/pocket.js"><strong>Pocket.js</strong></a> - <em>Feb 2021 - May 2021 (4 months)</em> – State manager (JS, Node.js, Require.js/AMD, Mocha)</li>
+<li><a href="https://github.com/eag1ex/x-utils-es"><strong>x‑utils‑es</strong></a> – <em>Jul 2020 - Oct 2021 (1 year 4 months)</em> -Typed JS utilities with tests</li>
+<li><a href="https://github.com/eag1ex/payload-resolution-manager"><strong>PRM</strong></a> – <em>Oct 2019 - Jan 2020 (4 months)</em> - Backend async processor (Node)</li>
+<li><a href="https://cluster-x-6rm1o.kinsta.page/"><strong>ClusterX</strong></a> – <em>Sep 2019 - Mar 2020 (7 months)</em> -CPU job parallelizer (3–4× faster)</li>
+</ul>
+<h6>2011 · New Zealand (3 months)</h6>
+<h4>Flash Developer — Yahoo!</h4>
+<ul>
+<li>Build flash animation banners for point of sale (POS) on Yahoo! website</li>
+</ul>
+<p><em><strong>Stack:</strong> Adobe Flash, ActionScript 2, Adobe PhotoShop</em></p>
+<hr>
+</div>
+<div class="earlier-career">
+<h6>EARLIER CAREER — 1999–2011 · New Zealand  <a href="https://eaglex.net/assets/michael.resume.earlier.pdf">Details</a></h6>
+<ul>
+<li><em>Graphic design and television work, working for large and international corporations</em></li>
+</ul>
+</div>
+<hr>
+<div id="cert-courses">
+<h3>CERTIFICATIONS &amp; COURSES</h3>
+<p><em>Professional Certifications</em></p>
+<ul>
+<li><a href="https://www.stripe.training/stripe-certified-professional-developer">Stripe Developer Certificate</a></li>
+<li><a href="https://www.coursera.org/learn/introduction-to-cloud">IBM Cloud Computing / Cloud Essentials</a></li>
+</ul>
+<p><em>Software Development</em></p>
+<ul>
+<li><a href="https://www.udemy.com/course/pythonforbeginners/">Learn Python: The Complete Python Programming Course / Udemy</a></li>
+<li><a href="https://www.coursera.org/learn/introduction-to-web-development-with-html-css-javacript">Web Development with HTML, CSS, JavaScript / IBM, Coursera</a></li>
+<li><a href="https://www.coursera.org/learn/developing-frontend-apps-with-react">Developing Front-End Apps with React / IBM, Coursera</a></li>
+<li><a href="https://www.udemy.com/course/domain-driven-design-and-microservices/">Design Microservices Architecture with Patterns &amp; Principles / Udemy</a></li>
+<li><a href="https://www.udemy.com/course/application-security-the-complete-guide/">Application Security / Owasp Top 10 / Udemy</a></li>
+</ul>
+<p><em>Frameworks &amp; Libraries</em></p>
+<ul>
+<li><a href="https://www.udemy.com/course/rxjs-and-observables/">RxJS 7 and Observables / Udemy</a></li>
+<li><a href="https://www.udemy.com/course/master-javascript-animations-with-greensock/">Master JavaScript Animations with Greensock / Gsap / Udemy</a></li>
+<li><a href="https://www.udemy.com/course/astrojs-101-build-blazing-fast-frontends/">AstroJS 101: Build Blazing Fast Frontends! / Udemy</a></li>
+</ul>
+<p><em>Soft Skills &amp; Communication</em></p>
+<ul>
+<li><a href="https://www.udemy.com/course/practical-leadership/">Leadership Communication Skills for Influence and Impact / Udemy</a></li>
+<li><a href="https://www.udemy.com/course/assertive-communication-skills-masterclass/">Assertive Communication Skills Masterclass / Udemy</a></li>
+<li><a href="https://www.udemy.com/course/github-copilot/">GitHub Copilot - AI for Coding &amp; Development / Udemy</a></li>
+</ul>
+<p><small><em>Certificates available on request</em></small></p>
+</div>
+<hr>
+<h3>EDUCATION</h3>
+<p><strong>Diploma in Digital Media</strong>, Media Design School (2010–2011)<br>
+<strong>Diploma in Graphic Design</strong>, Media Design School (2001–2002)<br>
+<strong>Diploma in Camera Operations</strong>, South Seas Film School (2000)</p>
+<hr>
+<div id='disclaimer'>
+<h4>DISCLAIMER</h4>
+<ul>
+<li>Handle personal data per GDPR or equivalent</li>
+<li>Ask for consent before sharing with third parties</li>
+<li>Coding tests available on request</li>
+<li><u>No A.I.</u> interviews.</li>
+<li>References provided only upon selection.</li>
+</ul>
+</div>
+
+
+<script>
+const ws = new WebSocket("ws://localhost:3001");
+
+ws.onmessage = () => {
+  location.reload();
+};
+</script>
+
+</body>
+</html>

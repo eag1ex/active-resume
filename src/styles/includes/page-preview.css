@@ -1,0 +1,50 @@
+@media screen {
+  html {
+    background: #ececec;
+  }
+
+  body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto !important;
+    background: white;
+    box-shadow:
+      0 0 25px rgba(0,0,0,.15);
+
+    box-sizing: border-box;
+  }
+
+}
+
+@media print {
+
+  html,
+  body {
+    background: white;
+    box-shadow: none;
+    margin: 0;
+    
+  }
+
+}
+
+@page {
+
+  size: A4;
+  margin-top: 10mm;
+  margin-left: 7mm;
+  margin-right: 7mm;
+  margin-bottom: 18mm;
+
+  @bottom-left {
+    content: "Michael P. | Resume";
+  }
+
+  @bottom-right {
+    content:
+      "Page "
+      counter(page)
+      " of "
+      counter(pages);
+  }
+}
