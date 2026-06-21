@@ -34,7 +34,8 @@ title: My Resume
 
 **Languages:** English, Polish · International experience across EU & APAC  
 
-**Profiles:** [GitHub](https://github.com/eag1ex?tab=stars) · [Website](https://michaelworks.eaglex.net) &nbsp; **Reference:** [Letter #1](https://michaelworks.eaglex.net/assets/letter-sample.jpg), [Letter #2](https://michaelworks.eaglex.net/assets/letter-sample-b.jpg) &nbsp; **Location:** New Zealand
+**Profiles:** [GitHub](https://github.com/eag1ex?tab=stars) · [Website](https://michaelworks.eaglex.net) &nbsp; 
+**Reference:** [Letter #1](https://michaelworks.eaglex.net/assets/letter-sample.jpg), [Letter #2](https://michaelworks.eaglex.net/assets/letter-sample-b.jpg) &nbsp; **Location:** New Zealand
 
 </div>
 </div>
@@ -60,10 +61,13 @@ Senior Lead Software Engineer with 10+ years of experience building scalable web
 
 #### Independent Software Engineer · [michaelworks.netlify.app](https://michaelworks.netlify.app)
 
+<div class="list-inline">
+
 - Build niche projects with [Astro.js](https://michaelworks.netlify.app) and [Sveltejs](https://github.com/eag1ex/svelte-stacked)
 - Involved in early stage pre-seed founder startup project, 
 - Prototyped AI workflows for scaffolding and docs
 - Maintain my [**opensource work**](https://michaelworks.netlify.app/projects/cat/open-source/)
+</div>
 
 ---
 
@@ -92,11 +96,7 @@ Senior Lead Software Engineer with 10+ years of experience building scalable web
 - [**ARV | SSHE**](https://michaelworks.netlify.app/projects/hess-client-admin-portal-fintech/) — React admin; coord closely with .NET backend, led team of 3, introduced RestAPI namespace / schema.
 </span>
 
-<div class="section-stack">
-
-<u>Stack:</u> Node.js, TypeScript, Angular, React, Next.js, NestJS, Firebase, Azure, GCP, Firestore, MS SQL, Stripe, Monorepo, D2LANG
-
-</div>
+_**Stack:** Node.js, TypeScript, Angular, React, Next.js, NestJS, Firebase, Azure, GCP, Firestore, MS SQL, Stripe, Monorepo, D2LANG_
 
 <div id='work-before-2018' style="padding-top:1px;">
 

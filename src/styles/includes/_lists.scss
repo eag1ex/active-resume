@@ -8,19 +8,27 @@ ul {
 
 ul > li {
   position: relative;
-  padding-left: 1rem;
+  padding-left: 0;
   margin: 0 0 .15rem 0;
 }
 
-ul > li::before {
-  content: "•";
-  opacity: .6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: $font-size-base;
-  font-weight: 500;
-}
+// ul > li::before {
+//   // content: "•";
+//   opacity: .6;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   font-size: $font-size-base;
+//   font-weight: 500;
+// }
+
+  ul li:not(:last-child)::before {
+    content: "•";
+    display: inline-block;
+    margin-right: .5rem;
+    position: relative;
+    top: -.05em;
+  }
 
 // ul li::marker {
 //   display: none;
