@@ -59,16 +59,12 @@ td {
 
   ul li:not(:last-child)::after {
 
-  
-
+   // content: "•";
     display: inline-block;
-
     margin-left: .6rem;
     margin-right: .35rem;
-
     position: relative;
-    top: -.05em;
-
+    // top: -.05em;
   }
 
 }
