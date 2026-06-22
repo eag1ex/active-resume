@@ -1,46 +1,38 @@
 @use "./variables" as *;
 
 @page {
-  //  font-family: "Segoe UI", "Helvetica", Arial,"Segoe UI Symbol";
-   $font-body:
-  "Segoe UI",
-  Arial,
-  sans-serif;
-  // font-family: 
-  // "-apple-system-body",
-  //  "ui-sans-serif", 
-  //  "-apple-system", "system-ui", 
-  //  "Segoe UI", "Helvetica", 
-  //  "Apple Color Emoji", "Arial",
-  //   "sans-serif", "Segoe UI Emoji", 
-  //   "Segoe UI Symbol";
 
+   font-family:$font-body;
 
-  margin-top: 10mm;
+  margin-top: 7mm;
   margin-left: 5mm;
   margin-right: 5mm;
-  margin-bottom: 18mm;
+  margin-bottom: 11mm;
 
   color: $color-body;
 
   @bottom-left {
-    margin-left: 32px;
-    content: "Michael P. | Resume | Senior Lead Software Engineer";
+    margin-left: 8px;
+    content: "Michael P. | Resume | Founder & Chief Architect";
     font-size: 9pt;
+    font-size: $font-body;
   }
 
   @bottom-right {
+    margin-right: 8px;
+     font-size: 9pt;
     content: "Page " counter(page) " of " counter(pages);
-    font-size: $font-size-base;
+    font-size: $font-body;
   }
 }
 
 @page :first {
-  margin-top: 5mm;
+  margin-top: 2mm;
 
   @top-right {
-    content: "Jun 10 2026";
-    font-size: 6pt;
+    margin-top: 20px!important;
+    content: "Jun 22 2026";
+    font-size: 8pt;
   }
 }
 

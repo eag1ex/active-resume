@@ -4,6 +4,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: 2px!important;
 }
 
 ul > li {
@@ -22,13 +23,17 @@ ul > li {
 //   font-weight: 500;
 // }
 
-  ul li:not(:last-child)::before {
+  ul li::before {
     content: "•";
+    color: $color-primary-muted;
     display: inline-block;
-    margin-right: .5rem;
     position: relative;
-    top: -.05em;
-  }
+    display: inline-block;
+    position: relative;
+    top: -0.05em;
+    margin-left: -15px;
+    padding-right: 8px;
+}
 
 // ul li::marker {
 //   display: none;

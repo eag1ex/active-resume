@@ -67,7 +67,7 @@ h4::first-letter {
 }
 
 h6 {
-  margin-top: 10px !important;
+  margin-top: 13px !important;
   font-size: 12pt !important;
   font-weight: 400 !important;
   margin-bottom: -6px !important;
@@ -96,9 +96,12 @@ ol {
   padding-left: 0em !important;
 }
 
+
+
 ul li {
-  line-height: 1.35em !important;
+  line-height: 1.30em !important;
   font-size: $font-size-base;
+  letter-spacing: .01em;
 }
 
 a {
