@@ -1,7 +1,7 @@
 ---
-fileName: resume
+fileName: michael-resume.v2
 cssName: resume.scss
-title: Michael | Curriculum Vitae
+title: Michael Polak | Curriculum Vitae
 ---
 
 
@@ -21,7 +21,7 @@ title: Michael | Curriculum Vitae
 
   <div style="flex:1 1 auto; display:flex; flex-direction:column; gap:0px">
     <div class='heading-list'>
-      <h1>< MICHAEL P. /></h1> 
+      <h1>< Michael Polak /></h1> 
       <h1>&nbsp;< Founder & Chief Architect /></h1>
     </div>
   </div>
@@ -30,9 +30,11 @@ title: Michael | Curriculum Vitae
 <hr style="border-top:6px solid #f2f1f1ff!important;" />
 <div class="profile-header-sub-section">
 
-<span class="header-section-item">
-Software Architecture • Node.js/TypeScript • React & Angular • Cloud Platforms • Product Development • Technical Leadership.
-</span>
+<p class="header-section-item">
+
+**Main stack:** Software Architecture • Node.js/TypeScript • React & Angular • Cloud Platforms <br/>• Product Development • Technical Leadership.
+
+</p>
 
 **Languages:** English, Polish · International experience across EU & APAC  
 
@@ -85,7 +87,7 @@ Technology leader with 10+ years of international experience delivering web, mob
 
 ###### Dec 2021 – Jan 2024 · Chiang Mai, Thailand
 
-#### Senior Lead Developer — Manao Software &nbsp;[#Brief](https://eaglex.net/assets/michael.resume.manao.jd.pdf)
+#### Senior Lead Developer — Manao Software &nbsp;[#Brief](https://michaelworks.eaglex.net/assets/michael.resume.manao.jd.pdf)
 - <strong>Full-time 2 years.</strong> Leading digital agency 100+ ppl in Chiang Mai. Directed cross-functional teams, led architecture & estimations, mentored junior/mid developers, raised code quality across the org.
 - Authored best-practices guide for company, standardized technical docs, and improved Azure pipelines + Git strategy. Led frontend overhaul within a monorepo environment, improved engagement and reduced deployment time by 70%.
 
@@ -129,7 +131,7 @@ Technology leader with 10+ years of international experience delivering web, mob
 
 ---
 
-###### 2014 – 2015 · Asia
+###### 2014 – 2015 · Eastern Asia
 
 #### Senior MEAN Stack Developer 
 
@@ -176,7 +178,7 @@ Technology leader with 10+ years of international experience delivering web, mob
 ---
 <div class="open-source">
 
-###### 2019 - 2021 · WORK: OPEN SOURCE & CLIENT PROJECTS: [#Details ](https://eaglex.net/assets/michael.opensource.pdf)
+###### 2019 - 2021 · WORK: OPEN SOURCE & CLIENT PROJECTS: [#Details ](https://michaelworks.eaglex.net/assets/michael.opensource.pdf)
 
 - [#Pocket.js](https://github.com/eag1ex/pocket.js) - Feb 2021 - May 2021 (4 months) – State manager (JS, Node.js, Require.js/AMD, Mocha)
 - [#x‑utils‑es](https://github.com/eag1ex/x-utils-es) – Jul 2020 - Oct 2021 (1 year 4 months) -Typed JS utilities with tests
@@ -190,7 +192,7 @@ Technology leader with 10+ years of international experience delivering web, mob
 
 <div class="earlier-career">
 
-###### EARLIER CAREER — 1999–2011 · New Zealand:  [Details](https://eaglex.net/assets/michael.resume.earlier.pdf)
+###### EARLIER CAREER — 1999–2011 · New Zealand:  [Details](https:/michaelworks.eaglex.net/assets/michael.resume.earlier.pdf)
 - _Graphic design and television work for large and international corporations_
 
 </div>

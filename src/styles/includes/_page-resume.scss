@@ -13,7 +13,7 @@
 
   @bottom-left {
     margin-left: 8px;
-    content: "Michael P. | Resume | Founder & Chief Architect";
+    content: "Michael Polak | Resume | Founder & Chief Architect";
     font-size: 9pt;
     font-size: $font-body;
   }
@@ -51,32 +51,4 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, .15);
     box-sizing: border-box;
   }
-}
-
-body {
-  font-family: $font-body !important;
-  font-size: $font-size-base;
-  line-height: 1.25;
-  font-weight: 300;
-  font-style: normal;
-}
-
-h1,
-h2 {
-  page-break-after: avoid !important;
-}
-
-h3,
-p,
-ul {
-  page-break-inside: avoid !important;
-}
-
-hr {
-  border: 0;
-  border-top: 2px solid $color-border !important;
-  margin-top: 0 !important;
-  margin-bottom: 10px !important;
-  opacity: .8;
-  padding: 0 !important;
 }
