@@ -10,7 +10,7 @@ title: Michael Polak | Cover Letter
 
 <p class="header-section-item">
 
-**Main stack:**  Software Architecture • Node.js/TypeScript • React & Angular • Cloud Platforms <br/>• Product Development • Technical Leadership.
+**Main stack:**  Software Architecture • Node.js/TypeScript • React & Angular • NOSQL/ORM/PostgreSQL <br/>• Cloud Platforms • Product Development • Technical Leadership.
 </p>
 
 **Languages:** English, Polish · International experience across EU & APAC  
@@ -48,7 +48,7 @@ My background spans agencies, startups, consulting engagements, and product-focu
 - Reduced deployment times by 70% through improved engineering processes and release workflows.
 - Reduced infrastructure costs by 30% through architectural and platform optimisation.
 
-I am primarily interested in contract, consulting, and project-based engagements where I can contribute as a Software Architect, Technical Lead, or Senior Full-Stack Engineer.
+I am primarily interested in contract, consulting, and project-based engagements where I can contribute as a Software Architect, Technical Lead, or Senior Software Engineer.
 
 I welcome the opportunity to discuss how I can support your team and upcoming initiatives.
 

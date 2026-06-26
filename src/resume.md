@@ -32,7 +32,7 @@ title: Michael Polak | Curriculum Vitae
 
 <p class="header-section-item">
 
-**Main stack:** Software Architecture • Node.js/TypeScript • React & Angular • Cloud Platforms <br/>• Product Development • Technical Leadership.
+**Main stack:** Software Architecture • Node.js/TypeScript • React & Angular • NOSQL/ORM/PostgreSQL <br/>• Cloud Platforms • Product Development • Technical Leadership.
 
 </p>
 
